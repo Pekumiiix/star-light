@@ -177,8 +177,8 @@
   }
 
   body main .history{
-    position: relative;
-    overflow: scroll;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .history .table-ctn table{
@@ -186,6 +186,7 @@
   }
 
   main .history .table-ctn .transact{
+    margin-bottom: 0.75rem;
     display: flex;
   }
 }
@@ -257,7 +258,12 @@
 
 @media screen and (max-width: 478px) {
   main .account-details, main .report, main .quick-actions, main .report, main .analytics, body main .history, main .income{
-    width: 90%;
+    margin-left: 2.5%;
+    width: 95%;
+  }
+
+  main .account-details{
+    height: 250px;
   }
 
   .account-details .balance p{
@@ -280,8 +286,8 @@
   }
 
   main .redux{
-    margin-top: 1075px;
-    margin-right: 6px;
+    margin-top: 1025px;
+    margin-right: -4px;
   }
 
   .analytics .header{
@@ -1693,7 +1699,6 @@ table th, table td{
 }
 
 .table-ctn .transact{
-  display: flex;
   display: none;
   width: 95%;
   justify-content: space-between;

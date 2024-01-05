@@ -350,7 +350,7 @@ table th, table td {
 }
 
 .table-ctn .transact {
-    @apply flex w-[95%] justify-between hidden
+    @apply w-[95%] justify-between hidden
 }
 
 .transact-det-ctn {

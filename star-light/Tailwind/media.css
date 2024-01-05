@@ -148,7 +148,7 @@
     }
 
     body main .history {
-        @apply relative overflow-scroll
+        @apply h-fit
     }
 
     .history .table-ctn table {
@@ -156,7 +156,7 @@
     }
 
     main .history .table-ctn .transact {
-        @apply flex
+        @apply flex mb-3
     }
 }
 
@@ -227,7 +227,11 @@
 
 @media screen and (max-width: 478px) {
     main .account-details, main .report, main .quick-actions, main .report, main .analytics, body main .history, main .income {
-        @apply w-[90%]
+        @apply w-[95%] ml-[2.5%] 
+    }
+
+    main .account-details {
+        @apply h-[250px]
     }
 
     .account-details .balance p {
@@ -247,7 +251,7 @@
     }
 
     main .redux {
-        @apply mt-[1075px] mr-[6px]
+        @apply mt-[1025px] mr-[-4px]
     }
 
     .analytics .header {
