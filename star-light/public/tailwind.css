@@ -1,0 +1,1750 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@media screen and (max-width: 1280px) {
+  body aside{
+    display: none;
+  }
+
+  body main{
+    width: 100%;
+  }
+
+  .main-nav .date .aside-nav{
+    margin-top: 0px;
+    display: flex;
+  }
+
+  .main-nav .date{
+    gap: 1.75rem;
+  }
+
+  .main-nav .main-nav-right .menu-btn{
+    margin-left: 0.5rem;
+    display: flex;
+  }
+
+  main .account-details{
+    width: 96%;
+  }
+
+  main .quick-actions{
+    margin-left: 1.25rem;
+    width: 48%;
+  }
+
+  main .income{
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 200px;
+    width: 46.5%;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .income .section-header{
+    margin-top: 0px;
+  }
+
+  main .report{
+    margin-top: 0px;
+    margin-left: 1.25rem;
+    height: 505px;
+    width: 58%;
+    gap: 60px;
+  }
+
+  .report .graph-ctn{
+    height: 75%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  main .redux{
+    position: absolute;
+    right: 1.75rem;
+    margin-top: 585px;
+    margin-left: 0px;
+  }
+
+  main .analytics{
+    width: 36%;
+    align-items: center;
+  }
+
+  .analytics .illus-ctn{
+    margin-left: 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 2.5rem;
+  }
+
+  .analytics .others-ctn{
+    margin-top: 1.25rem;
+  }
+
+  body main .history{
+    margin-left: 1.25rem;
+    margin-top: 4px;
+    margin-bottom: 1.25rem;
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .income{
+    width: 46%;
+  }
+
+  main .redux{
+    right: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  main .redux{
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  main .account-details{
+    width: 95.5%;
+  }
+
+  main .quick-actions{
+    width: 47%;
+  }
+
+  main .redux{
+    right: 1rem;
+  }
+
+  main .report, main .analytics, body main .history{
+    width: 95.5%;
+  }
+
+  .report .report-nav{
+    width: 90%;
+  }
+
+  main .analytics{
+    margin-left: 1.25rem;
+  }
+
+  .analytics .others-ctn{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .other-det-ctn .progress{
+    width: 275px;
+  }
+
+  .analytics .header{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .account-details, main .quick-actions{
+    width: 95%;
+  }
+
+  .quick-actions .header, .quick-actions .action{
+    width: 95%;
+  }
+
+  main .income{
+    margin-left: 1.25rem;
+    width: 46.5%;
+  }
+
+  main .redux{
+    margin-top: 805px;
+  }
+
+  .report .report-nav, .analytics .header{
+    width: 95%;
+  }
+
+  .other-item .other-det-ctn{
+    width: 100%;
+  }
+
+  .other-det-ctn .progress{
+    width: 220px;
+  }
+
+  body main .history{
+    position: relative;
+    overflow: scroll;
+  }
+
+  .history .table-ctn table{
+    display: none;
+  }
+
+  main .history .table-ctn .transact{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .analytics .others-ctn{
+    flex-direction: column;
+  }
+
+  .other-item .other-det-ctn{
+    width: 90%;
+  }
+
+  .other-item .other-det-ctn .progress{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .date .real-date{
+    display: none;
+  }
+
+  main .account-details, main .report, main .quick-actions, main .analytics, body main .history{
+    width: 93%;
+  }
+
+  main .menu{
+    width: 70%;
+  }
+
+  main .account-details{
+    height: 300px;
+  }
+
+  main .income{
+    width: 45%;
+  }
+
+  main .redux{
+    margin-top: 855px;
+  }
+
+  .analytics .others-ctn{
+    flex-direction: column;
+  }
+
+  .other-item .other-det-ctn{
+    width: 90%;
+  }
+
+  .other-item .other-det-ctn .progress{
+    width: 100%;
+  }
+
+  body main .history{
+    align-items: flex-start;
+  }
+
+  .history .table-ctn{
+    position: relative;
+    overflow: scroll;
+  }
+
+  .history .history-nav, .history table{
+    margin-left: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  main .account-details, main .report, main .quick-actions, main .report, main .analytics, body main .history, main .income{
+    width: 90%;
+  }
+
+  .account-details .balance p{
+    font-size: 35px;
+  }
+
+  .quick-actions .header, .quick-actions .action{
+    width: 90%;
+  }
+
+  main .report{
+    margin-top: 220px;
+  }
+
+  .report .report-nav{
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  main .redux{
+    margin-top: 1075px;
+    margin-right: 6px;
+  }
+
+  .analytics .header{
+    width: 90%;
+  }
+
+  .other-det-ctn .progress{
+    width: 290px;
+  }
+
+  .history .history-nav{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aside-nav p{
+    display: none;
+  }
+
+  main .redux{
+    margin-right: 0.25rem;
+  }
+
+  .other-det-ctn .progress{
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main .account-details, main .quick-actions, main .income, main .report, main .analytics, body main .history{
+    margin-left: 0.5rem;
+    width: 95%;
+  }
+
+  .main-nav .main-nav-right .nav-det-ctn{
+    display: none;
+  }
+
+  .account-details .balance{
+    gap: 0.25rem;
+  }
+
+  .account-details .balance p{
+    font-size: 20px;
+  }
+
+  main .redux{
+    margin-right: -10px;
+  }
+
+  .other-det-ctn .progress{
+    width: 175px;
+  }
+
+  .history .history-nav .det{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*
+! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.table{
+  display: table;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.rounded-bl-md{
+  border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-br-md{
+  border-bottom-right-radius: 0.375rem;
+}
+
+.rounded-tl-md{
+  border-top-left-radius: 0.375rem;
+}
+
+.rounded-tr-md{
+  border-top-right-radius: 0.375rem;
+}
+
+.bg-\[\#0000001A\]{
+  background-color: #0000001A;
+}
+
+.bg-\[\#1E19F20D\]{
+  background-color: #1E19F20D;
+}
+
+.bg-\[\#518A1A0D\]{
+  background-color: #518A1A0D;
+}
+
+.bg-\[\#DF39570A\]{
+  background-color: #DF39570A;
+}
+
+.bg-\[\#FA14E30D\]{
+  background-color: #FA14E30D;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+  padding: 0px
+}
+
+body{
+  display: flex;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 249 250 / var(--tw-bg-opacity));
+}
+
+aside{
+  position: sticky;
+  top: 0px;
+  display: flex;
+  height: 100vh;
+  width: 15vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  border-right-width: 1px;
+  border-color: #292D3219;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.aside-nav{
+  margin-top: 1.5rem;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aside-nav img{
+  height: 2rem;
+  width: 2rem;
+}
+
+.aside-nav p{
+  cursor: default;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.link-ctn{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link-ctn img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.link-ctn p{
+  position: relative;
+  display: flex;
+  width: 150px;
+  cursor: default;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.link-ctn p:hover{
+  background-color: #292D3219;
+}
+
+.link-ctn .active, .menu .active{
+  background-color: #9619F905;
+  --tw-text-opacity: 1;
+  color: rgb(150 25 249 / var(--tw-text-opacity));
+}
+
+main{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 85vw;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  background-color: #292D3219;
+}
+
+.main-nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+  border-color: #292D3219;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.date, .real-date{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.date{
+  margin-left: 1.25rem;
+}
+
+.date .aside-nav{
+  display: none;
+}
+
+.date img{
+  height: 2rem;
+  width: 2rem;
+}
+
+.date p{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.nav-det-ctn{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-direction: column;
+}
+
+.main-nav-right{
+  margin-right: 1.25rem;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.message{
+  text-align: right;
+  font-size: 13px;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.user-name{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.main-nav-left img{
+  height: 50px;
+  width: 50px;
+}
+
+.main-nav-right .menu-btn{
+  display: none;
+}
+
+.menu{
+  position: absolute;
+  right: 0.75rem;
+  z-index: 1;
+  margin-top: 90px;
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hide{
+  display: none;
+}
+
+.menu p, .menu .active{
+  width: 95%;
+  padding: 0.5rem;
+}
+
+.account-details{
+  position: relative;
+  margin-left: 1.25rem;
+  display: flex;
+  height: 250px;
+  width: 67%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(150 25 249 / var(--tw-bg-opacity));
+}
+
+.tier-det{
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF66;
+  padding: 0.5rem;
+}
+
+.tier-det img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.tier-det p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 1;
+}
+
+.balance{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.balance p{
+  font-size: 50px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.balance svg{
+  height: 2.25rem;
+  width: 2.25rem;
+}
+
+.balance svg path{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.balance svg:hover path{
+  stroke: #fff;
+}
+
+.show-icon{
+  display: none;
+}
+
+.details{
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.acct{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.7;
+}
+
+.number{
+  display: flex;
+  cursor: default;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.number svg{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.quick-actions, .analytics{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 28%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #292D3219;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.header{
+  margin-top: 1.25rem;
+  width: 85%;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.action{
+  display: flex;
+  width: 85%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom-width: 1px;
+  border-color: #292D320D;
+  padding-bottom: 0.5rem;
+}
+
+.add img{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: #292D3219;
+  padding: 0.25rem;
+}
+
+.doc img{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.action-det-ctn{
+  display: flex;
+  flex-direction: column;
+}
+
+.action-description{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.action-detail{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+  opacity: 0.5;
+}
+
+.income{
+  margin-left: 1.25rem;
+  margin-top: -170px;
+  display: flex;
+  height: 175px;
+  width: 18%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #292D3219;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.section-header{
+  margin-top: 0.75rem;
+  display: flex;
+  width: 85%;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.section-header svg{
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.income-digit{
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 85%;
+  font-size: 22px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.section-summary, .section-summary-2{
+  display: flex;
+  width: 85%;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.section-summary span{
+  border-radius: 55px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 247 232 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(46 177 25 / var(--tw-text-opacity));
+}
+
+.report{
+  margin-top: -170px;
+  display: flex;
+  height: 363px;
+  width: 47%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #292D3219;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.report-nav{
+  margin-top: 0.75rem;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rep-nav-left{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.left-description{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.month-ctn{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.month-ctn p{
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+  opacity: 0.7;
+}
+
+.month-ctn .active{
+  background-color: #1D2D3224;
+}
+
+.report-nav button{
+  display: flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: #1D2D3224;
+  padding: 6px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.graph-ctn{
+  display: flex;
+  height: 225px;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: url('img/graph.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.tags{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.tags p{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.income-tag span{
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 177 25 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+}
+
+.expense-tag span{
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+}
+
+.graph-ctn img{
+  height: 170px;
+  width: 100%;
+}
+
+.illustration{
+  height: 250px;
+  width: 90%;
+  border-bottom-width: 1px;
+  border-color: #292D3219;
+}
+
+.others-ctn{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 90%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.other-item{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.other-item img{
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #292D3219;
+  padding: 0.5rem;
+}
+
+.other-det-ctn{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.progress{
+  position: relative;
+  height: 0.25rem;
+  width: 225px;
+  border-radius: 0.375rem;
+  background-color: #292D3219;
+}
+
+.transfer .bar{
+  position: absolute;
+  height: 0.25rem;
+  width: 50%;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.card .bar{
+  position: absolute;
+  height: 0.25rem;
+  width: 50%;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.redux{
+  margin-top: -485px;
+}
+
+.section-summary-2 span{
+  border-radius: 55px;
+  background-color: #DF39571A;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: #DF3957FF;
+}
+
+.history{
+  margin-left: -225px;
+  margin-top: -290px;
+  display: flex;
+  height: 250px;
+  width: 67%;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  border-radius: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.history-nav{
+  margin-top: 1.25rem;
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-nav .det{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.history-nav .view{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(150 25 249 / var(--tw-text-opacity));
+}
+
+.table-ctn{
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+table{
+  width: 95%;
+  gap: 0.5rem;
+}
+
+table th, table td{
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: left;
+}
+
+.table-ctn .transact{
+  display: flex;
+  display: none;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.transact-det-ctn{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.transact-det-ctn img{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.transact-det{
+  display: flex;
+  flex-direction: column;
+}
+
+.debitor{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+}
+
+.time{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(41 45 50 / var(--tw-text-opacity));
+  opacity: 0.7;
+}
+
+.amount{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.debit{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.credit{
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}

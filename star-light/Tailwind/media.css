@@ -1,0 +1,308 @@
+@media screen and (max-width: 1280px) {
+    body aside {
+        @apply hidden
+    }
+
+    body main {
+        @apply w-[100%]
+    }
+
+    .main-nav .date .aside-nav {
+        @apply flex mt-0
+    }
+
+    .main-nav .date {
+        @apply gap-7
+    }
+
+    .main-nav .main-nav-right .menu-btn {
+        @apply flex ml-2
+    }
+
+    main .account-details {
+        @apply w-[96%]
+    }
+
+    main .quick-actions {
+        @apply ml-5 w-[48%]
+    }
+
+    main .income {
+        @apply mt-0 ml-0 w-[46.5%] h-[200px] gap-5 justify-center
+    }
+
+    .income .section-header {
+        @apply mt-0
+    }
+
+    main .report {
+        @apply mt-0 w-[58%] ml-5 h-[505px] gap-[60px]
+    }
+
+    .report .graph-ctn {
+        @apply bg-contain bg-no-repeat h-[75%]
+    }
+
+    main .redux {
+        @apply absolute right-7  mt-[585px] ml-0
+    }
+
+    main .analytics {
+        @apply w-[36%] items-center
+    }
+
+    .analytics .illus-ctn {
+        @apply w-fit ml-8 gap-10
+    }
+
+    .analytics .others-ctn {
+        @apply  mt-5
+    }
+
+    body main .history {
+        @apply ml-5 w-[96%] mt-[4px] mb-5
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main .income {
+        @apply w-[46%]
+    }
+
+    main .redux {
+        @apply right-5  
+    }
+}
+
+@media screen and (max-width: 912px) {
+    main .redux {
+        @apply right-4
+    }
+}
+
+@media screen and (max-width: 820px) {
+    main .account-details {
+        @apply w-[95.5%]
+    }
+
+    main .quick-actions {
+        @apply w-[47%]
+    }
+
+    main .redux {
+        @apply right-4
+    }
+
+    main .report, main .analytics, body main .history {
+        @apply w-[95.5%]
+    }
+
+    .report .report-nav {
+        @apply w-[90%]
+    }
+
+    main .analytics {
+        @apply ml-5
+    }
+
+    .analytics .others-ctn {
+        @apply flex-row justify-center gap-10
+    }
+
+    .other-det-ctn .progress {
+        @apply w-[275px]
+    }
+
+    .analytics .header {
+        @apply w-[90%]
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .account-details, main .quick-actions {
+        @apply w-[95%]
+    }
+
+    .quick-actions .header, .quick-actions .action {
+        @apply w-[95%]
+    }
+
+    main .income {
+        @apply w-[46.5%] ml-5
+    }
+
+    main .redux {
+        @apply mt-[805px]
+    }
+
+    .report .report-nav, .analytics .header {
+        @apply w-[95%]
+    }
+
+    .other-item .other-det-ctn {
+        @apply w-[100%]
+    }
+
+    .other-det-ctn .progress {
+        @apply w-[220px]
+    }
+
+    body main .history {
+        @apply relative overflow-scroll
+    }
+
+    .history .table-ctn table {
+        @apply hidden
+    }
+
+    main .history .table-ctn .transact {
+        @apply flex
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .analytics .others-ctn {
+        @apply flex-col
+    }
+
+    .other-item .other-det-ctn {
+        @apply w-[90%]
+    }
+
+    .other-item .other-det-ctn .progress {
+        @apply w-[100%]
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .date .real-date {
+        @apply hidden
+    }
+
+    main .account-details, main .report, main .quick-actions, main .analytics, body main .history {
+        @apply w-[93%] 
+    }
+
+    main .menu {
+        @apply w-[70%]
+    }
+
+    main .account-details {
+        @apply h-[300px]
+    }
+
+    main .income {
+        @apply w-[45%]
+    }
+
+    main .redux {
+        @apply mt-[855px]
+    }
+
+    .analytics .others-ctn {
+        @apply flex-col
+    }
+
+    .other-item .other-det-ctn {
+        @apply w-[90%]
+    }
+
+    .other-item .other-det-ctn .progress {
+        @apply w-[100%]
+    }
+
+    body main .history {
+        @apply items-start
+    }
+
+    .history .table-ctn {
+        @apply relative overflow-scroll
+    }
+
+    .history .history-nav, .history table {
+        @apply ml-3
+    }
+
+}
+
+@media screen and (max-width: 478px) {
+    main .account-details, main .report, main .quick-actions, main .report, main .analytics, body main .history, main .income {
+        @apply w-[90%]
+    }
+
+    .account-details .balance p {
+        @apply text-[35px]
+    }
+
+    .quick-actions .header, .quick-actions .action {
+        @apply w-[90%]
+    }
+
+    main .report {
+        @apply mt-[220px]
+    }
+
+    .report .report-nav {
+        @apply w-[90%] flex-col gap-3 items-start
+    }
+
+    main .redux {
+        @apply mt-[1075px] mr-[6px]
+    }
+
+    .analytics .header {
+        @apply w-[90%]
+    }
+
+    .other-det-ctn .progress {
+        @apply w-[290px]
+    }
+
+    .history .history-nav {
+        @apply w-[90%]
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .aside-nav p {
+        @apply hidden
+    }
+
+    main .redux {
+        @apply mr-1
+    }
+
+    .other-det-ctn .progress {
+        @apply w-[250px]
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main .account-details, main .quick-actions, main .income, main .report, main .analytics, body main .history {
+        @apply w-[95%] ml-2
+    }
+
+    .main-nav .main-nav-right .nav-det-ctn {
+        @apply hidden
+    }
+
+    .account-details .balance {
+        @apply gap-1
+    }
+
+    .account-details .balance p {
+        @apply text-[20px]
+    }
+
+    main .redux {
+        @apply mr-[-10px]
+    }
+
+    .other-det-ctn .progress {
+        @apply w-[175px]
+    }
+
+    .history .history-nav .det {
+        @apply text-base
+    }
+}

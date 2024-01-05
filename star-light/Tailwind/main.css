@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import './media.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+
+    @apply p-0 m-0 
+}
+
+body {
+    @apply bg-myWhite flex 
+}
+
+aside {
+    @apply sticky top-0 bg-white w-[15vw] h-[100vh] border-r border-lightBlack flex flex-col items-center gap-10
+}
+
+.aside-nav {
+    @apply flex items-center w-fit h-fit gap-2 mt-6
+}
+
+.aside-nav img {
+    @apply w-8 h-8
+}
+
+.aside-nav p {
+    @apply text-xl font-medium text-myBlack cursor-default
+}
+
+.link-ctn {
+    @apply flex flex-col gap-2
+}
+
+.link-ctn img {
+    @apply w-6 h-6
+}
+
+.link-ctn p {
+    @apply relative flex gap-2 items-center text-base text-myBlack w-[150px] p-[10px] rounded-[10px] cursor-default
+
+    hover:bg-lightBlack
+}
+
+.link-ctn .active, .menu .active {
+    @apply text-myBlue bg-[#9619F905]
+}
+
+main {
+    @apply w-[85vw] bg-lightBlack h-fit flex flex-wrap gap-5
+}
+
+.main-nav {
+    @apply w-[100%] h-[80px] bg-white border-b border-lightBlack flex items-center justify-between
+}
+
+.date, .real-date {
+    @apply w-fit h-fit items-center flex gap-2
+}
+
+.date {
+    @apply ml-5
+}
+
+.date .aside-nav {
+    @apply hidden
+}
+
+.date img {
+    @apply w-8 h-8
+}
+
+.date p {
+    @apply text-lg text-myBlack
+}
+
+.nav-det-ctn {
+    @apply w-fit h-fit flex flex-col
+}
+
+.main-nav-right {
+    @apply w-fit h-fit items-center flex gap-3 mr-5
+}
+
+.message {
+    @apply text-myBlack text-[13px] text-right
+}
+
+.user-name {
+    @apply text-myBlack text-base font-semibold
+}
+
+.main-nav-left img {
+    @apply w-[50px] h-[50px]
+}
+
+.main-nav-right .menu-btn {
+    @apply hidden
+}
+
+.menu {
+    @apply absolute right-3 mt-[90px] bg-white z-[1] rounded-md w-[500px] flex flex-col gap-3 items-center
+}
+
+.hide {
+    @apply hidden
+}
+
+.menu p, .menu .active {
+    @apply p-2 w-[95%]
+}
+
+.account-details {
+    @apply w-[67%] h-[250px] bg-myBlue relative ml-5 rounded-[10px] flex flex-col items-center justify-center
+}
+
+.tier-det {
+    @apply w-fit h-fit flex gap-2 p-2 top-5 right-5 bg-[#FFFFFF66] absolute rounded-lg
+}
+
+.tier-det img {
+    @apply w-6 h-6
+}
+
+.tier-det p {
+    @apply text-white font-bold text-base opacity-100
+}
+
+.balance {
+    @apply flex items-center gap-3
+}
+
+.balance p {
+    @apply text-white text-[50px] font-bold
+}
+
+.balance svg {
+    @apply w-9 h-9
+}
+
+.balance svg path {
+    @apply transition ease-in-out duration-300
+}
+
+.balance svg:hover path {
+    @apply stroke-white
+}
+
+.show-icon {
+    @apply hidden
+}
+
+.details {
+    @apply absolute flex flex-col gap-1 h-fit w-fit left-5 bottom-5
+}
+
+.acct {
+    @apply text-white opacity-70 text-sm font-medium
+}
+
+.number {
+    @apply text-white flex text-lg font-bold items-center gap-2 cursor-default
+}
+
+.number svg {
+    @apply w-6 h-6
+}
+
+.quick-actions, .analytics {
+    @apply w-[28%] h-fit bg-white rounded-[10px] border border-lightBlack flex flex-col items-center gap-5
+}
+
+.header {
+    @apply w-[85%] mt-5 font-semibold text-lg
+}
+
+.action {
+    @apply w-[85%] flex gap-4 items-center border-b border-[#292D320D] pb-2
+}
+
+.add img {
+    @apply w-10 h-10 p-1 rounded-[50%] bg-lightBlack
+}
+
+.doc img {
+    @apply w-10 h-10 p-2 rounded-[50%]
+}
+
+.action-det-ctn {
+    @apply flex flex-col
+}
+
+.action-description {
+    @apply text-sm font-semibold text-myBlack
+}
+
+.action-detail {
+    @apply text-xs text-myBlack opacity-50
+}
+
+.income {
+    @apply w-[18%] h-[175px] bg-white ml-5 rounded-[10px] mt-[-170px] border border-lightBlack flex flex-col gap-5 items-center
+}
+
+.section-header {
+    @apply w-[85%] text-myBlack font-semibold text-base flex items-center gap-2 mt-3
+}
+
+.section-header svg {
+    @apply w-5 h-5
+}
+
+.income-digit {
+    @apply w-[85%] h-fit text-[22px] text-myBlack font-bold
+}
+
+.section-summary, .section-summary-2 {
+    @apply w-[85%] flex items-center text-xs text-myBlack gap-2
+}
+
+.section-summary span {
+    @apply p-2 rounded-[55px] bg-[#EAF7E8] text-myGreen text-sm font-bold
+}
+
+.report {
+    @apply w-[47%] h-[363px] bg-white mt-[-170px] rounded-[10px] flex flex-col border border-lightBlack items-center gap-7
+}
+
+.report-nav {
+    @apply w-[90%] flex items-center justify-between h-fit mt-3
+}
+
+.rep-nav-left {
+    @apply flex flex-col gap-3 h-fit 
+}
+
+.left-description {
+    @apply text-myBlack font-semibold text-base flex items-center gap-2
+}
+
+.month-ctn {
+    @apply w-fit h-fit gap-2 flex items-center
+}
+
+.month-ctn p {
+    @apply p-[7px] text-xs text-myBlack opacity-70 font-medium rounded-[4px]
+}
+
+.month-ctn .active {
+    @apply bg-[#1D2D3224]
+}
+
+.report-nav button {
+    @apply outline-none border border-[#1D2D3224] flex items-center p-[6px] rounded-md text-sm font-bold
+}
+
+.graph-ctn {
+    @apply w-[90%] h-[225px] bg-center bg-cover bg-graph flex flex-col items-center gap-5
+}
+
+.tags {
+    @apply flex items-center w-fit h-fit gap-5
+}
+
+.tags p {
+    @apply text-sm text-myBlack font-semibold gap-2 flex items-center
+}
+
+.income-tag span {
+    @apply p-1 bg-myGreen rounded-sm
+}
+
+.expense-tag span {
+    @apply p-1 bg-red-500 rounded-sm
+}
+
+.graph-ctn img {
+    @apply w-[100%] h-[170px]
+}
+
+.illustration {
+    @apply w-[90%] h-[250px] border-b border-lightBlack
+}
+
+.others-ctn {
+    @apply flex flex-col gap-6 w-[90%] h-fit
+}
+
+.other-item {
+    @apply flex gap-2
+}
+
+.other-item img {
+    @apply w-10 h-10 p-2 rounded-[50%] bg-lightBlack flex items-center
+}
+
+.other-det-ctn {
+    @apply flex flex-col gap-1
+}
+
+.progress {
+    @apply w-[225px] bg-lightBlack h-1 rounded-md relative
+}
+
+.transfer .bar {
+    @apply w-[50%] bg-green-400 h-1 rounded-md absolute
+}
+
+.card .bar {
+    @apply w-[50%] bg-blue-400 h-1 rounded-md absolute
+}
+
+.redux {
+    @apply mt-[-485px]
+}
+
+.section-summary-2 span {
+    @apply p-2 rounded-[55px] bg-[#DF39571A] text-[#DF3957FF] text-sm font-bold
+}
+
+.history {
+    @apply w-[67%] h-[250px] bg-white rounded-[10px] flex flex-col ml-[-225px] mt-[-290px] items-center gap-[50px]
+}
+
+.history-nav {
+    @apply flex justify-between items-center w-[95%] mt-5
+}
+
+.history-nav .det {
+    @apply text-myBlack text-lg font-bold
+}
+
+.history-nav .view {
+    @apply text-base font-semibold text-myBlue
+}
+
+.table-ctn {
+    @apply w-[100%] flex flex-col h-fit items-center gap-3
+}
+
+table {
+    @apply w-[95%] gap-2
+}
+
+table th, table td {
+    @apply text-left p-4 border-collapse
+}
+
+.table-ctn .transact {
+    @apply flex w-[95%] justify-between hidden
+}
+
+.transact-det-ctn {
+    @apply flex items-center gap-2
+}
+
+.transact-det-ctn img {
+    @apply w-10 h-10
+}
+
+.transact-det {
+    @apply flex flex-col
+}
+
+.debitor {
+    @apply text-base text-myBlack font-semibold
+}
+
+.time {
+    @apply text-xs text-myBlack opacity-70
+}
+
+.amount {
+    @apply text-base font-semibold text-red-500
+}
+
+.debit {
+    @apply text-red-500
+}
+
+.credit {
+    @apply text-green-500
+}
