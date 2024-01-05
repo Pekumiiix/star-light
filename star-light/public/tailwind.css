@@ -1526,6 +1526,10 @@ main{
   background-position: center;
 }
 
+.report .graph-ctn img{
+  width: 93%;
+}
+
 .tags{
   display: flex;
   height: -moz-fit-content;

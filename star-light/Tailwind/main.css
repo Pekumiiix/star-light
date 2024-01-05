@@ -261,6 +261,10 @@ main {
     @apply w-[90%] h-[225px] bg-center bg-cover bg-graph flex flex-col items-center gap-5
 }
 
+.report .graph-ctn img {
+    @apply w-[93%]
+}
+
 .tags {
     @apply flex items-center w-fit h-fit gap-5
 }
