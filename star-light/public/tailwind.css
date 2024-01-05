@@ -59,6 +59,10 @@
     background-repeat: no-repeat;
   }
 
+  .report .graph-ctn img{
+    width: 93%;
+  }
+
   main .redux{
     position: absolute;
     right: 1.75rem;
@@ -309,7 +313,7 @@
   }
 
   main .redux{
-    margin-right: 0.25rem;
+    margin-right: -6px;
   }
 
   .other-det-ctn .progress{

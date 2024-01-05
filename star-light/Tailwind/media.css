@@ -43,6 +43,10 @@
         @apply bg-contain bg-no-repeat h-[75%]
     }
 
+    .report .graph-ctn img {
+        @apply w-[93%]
+    }
+
     main .redux {
         @apply absolute right-7  mt-[585px] ml-0
     }
@@ -273,7 +277,7 @@
     }
 
     main .redux {
-        @apply mr-1
+        @apply mr-[-6px]
     }
 
     .other-det-ctn .progress {
