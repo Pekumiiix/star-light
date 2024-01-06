@@ -28,7 +28,7 @@
     }
 
     main .income {
-        @apply mt-0 ml-0 w-[46.5%] h-[200px] gap-5 justify-center
+        @apply mt-0 ml-0 w-[46.5%] h-[220px] gap-5 justify-center
     }
 
     .income .section-header {
@@ -48,7 +48,7 @@
     }
 
     main .redux {
-        @apply absolute right-7  mt-[585px] ml-0
+        @apply absolute right-8  mt-[605px] ml-0
     }
 
     main .analytics {
@@ -136,7 +136,7 @@
     }
 
     main .redux {
-        @apply mt-[805px]
+        @apply mt-[845px]
     }
 
     .report .report-nav, .analytics .header {
@@ -183,6 +183,26 @@
         @apply hidden
     }
 
+    main .big-device {
+        @apply hidden
+    }
+
+    body main .small-device-nav {
+        @apply flex w-[93%] ml-5 border-none bg-transparent
+    }
+
+    .small-device-nav .main-nav .main-nav-right img {
+        @apply bg-transparent
+    }
+
+    .small-device-nav .main-nav {
+        @apply bg-transparent border-none
+    }
+
+    .small-device-nav .main-nav .main-nav-right .nav-det-ctn .message {
+        @apply text-left
+    }
+
     main .account-details, main .report, main .quick-actions, main .analytics, body main .history {
         @apply w-[93%] 
     }
@@ -192,7 +212,11 @@
     }
 
     main .account-details {
-        @apply h-[300px]
+        @apply h-[250px]
+    }
+
+    .balance .money {
+        @apply text-[38px]
     }
 
     main .income {
@@ -200,7 +224,7 @@
     }
 
     main .redux {
-        @apply mt-[855px]
+        @apply mt-[945px]
     }
 
     .analytics .others-ctn {
@@ -255,7 +279,7 @@
     }
 
     main .redux {
-        @apply mt-[1025px] mr-[-4px]
+        @apply mt-[1175px] mr-[-4px]
     }
 
     .analytics .header {
@@ -269,13 +293,13 @@
     .history .history-nav {
         @apply w-[90%]
     }
+
+    .transact .amount {
+        @apply text-[14px]
+    }
 }
 
 @media screen and (max-width: 400px) {
-    .aside-nav p {
-        @apply hidden
-    }
-
     main .redux {
         @apply mr-[-6px]
     }
@@ -290,9 +314,9 @@
         @apply w-[95%] ml-2
     }
 
-    .main-nav .main-nav-right .nav-det-ctn {
+    /*.main-nav .main-nav-right .nav-det-ctn {
         @apply hidden
-    }
+    }*/
 
     .account-details .balance {
         @apply gap-1
@@ -300,6 +324,10 @@
 
     .account-details .balance p {
         @apply text-[20px]
+    }
+
+    .report-nav .rep-nav-left .month-ctn {
+        @apply relative overflow-auto
     }
 
     main .redux {
@@ -312,5 +340,9 @@
 
     .history .history-nav .det {
         @apply text-base
+    }
+
+    .transact .amount {
+        @apply text-xs
     }
 }

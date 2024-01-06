@@ -53,7 +53,7 @@ main {
     @apply w-[85vw] bg-lightBlack h-fit flex flex-wrap gap-5
 }
 
-.main-nav {
+.main-nav, .small-device-nav {
     @apply w-[100%] h-[80px] bg-white border-b border-lightBlack flex items-center justify-between
 }
 
@@ -111,6 +111,12 @@ main {
 
 .menu p, .menu .active {
     @apply p-2 w-[95%]
+
+    active:bg-lightBlack
+}
+
+main .small-device-nav {
+    @apply hidden
 }
 
 .account-details {
@@ -178,11 +184,17 @@ main {
 }
 
 .action {
-    @apply w-[85%] flex gap-4 items-center border-b border-[#292D320D] pb-2
+    @apply w-[85%] flex gap-4 items-center border-b border-[#292D320D] pt-2 pb-2 rounded-md
+
+    active:bg-[#9619F905]
+}
+
+.action img {
+    @apply ml-2
 }
 
 .add img {
-    @apply w-10 h-10 p-1 rounded-[50%] bg-lightBlack
+    @apply w-10 h-10 p-1 rounded-[50%] bg-[#2EB1190D]
 }
 
 .doc img {
