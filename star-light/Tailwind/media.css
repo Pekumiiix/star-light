@@ -15,10 +15,6 @@
         @apply gap-7
     }
 
-    .main-nav .main-nav-right .menu-btn {
-        @apply flex ml-2
-    }
-
     main .account-details {
         @apply w-[96%]
     }
@@ -66,6 +62,10 @@
     body main .history {
         @apply ml-5 w-[96%] mt-[4px] mb-5
     }
+
+    body main .bottom-nav {
+        @apply flex
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -85,6 +85,10 @@
 }
 
 @media screen and (max-width: 820px) {
+    .date .real-date {
+        @apply hidden
+    }
+
     main .account-details {
         @apply w-[95.5%]
     }
@@ -127,8 +131,24 @@
         @apply w-[95%]
     }
 
-    .quick-actions .header, .quick-actions .action {
-        @apply w-[95%]
+    main .quick-actions {
+        @apply flex flex-row gap-0 h-[100px] justify-evenly
+    }
+
+    .quick-actions .header {
+        @apply hidden
+    }
+
+    .quick-actions .action {
+        @apply flex-col border-none gap-1 mb-0 p-2 w-fit
+    }
+
+    .action .action-description {
+        @apply text-center text-xs
+    }
+
+    .action .action-detail {
+        @apply hidden
     }
 
     main .income {
@@ -136,7 +156,7 @@
     }
 
     main .redux {
-        @apply mt-[845px]
+        @apply mt-[490px]
     }
 
     .report .report-nav, .analytics .header {
@@ -148,7 +168,7 @@
     }
 
     .other-det-ctn .progress {
-        @apply w-[220px]
+        @apply w-[260px]
     }
 
     body main .history {
@@ -203,12 +223,12 @@
         @apply text-left
     }
 
-    main .account-details, main .report, main .quick-actions, main .analytics, body main .history {
+    main .account-details, main .quick-actions, body main .history {
         @apply w-[93%] 
     }
 
-    main .menu {
-        @apply w-[70%]
+    body main .account-details {
+        @apply h-[225px]
     }
 
     main .account-details {
@@ -216,45 +236,68 @@
     }
 
     .balance .money {
-        @apply text-[38px]
+        @apply text-[30px]
     }
 
-    main .income {
-        @apply w-[45%]
+    main .quick-actions {
+        @apply flex flex-row gap-0 h-[100px]
     }
 
-    main .redux {
-        @apply mt-[945px]
+    .quick-actions .header {
+        @apply hidden
     }
 
-    .analytics .others-ctn {
-        @apply flex-col
+    .quick-actions .action {
+        @apply flex-col border-none gap-1 mb-0
     }
 
-    .other-item .other-det-ctn {
-        @apply w-[90%]
+    .action .action-description {
+        @apply text-center text-xs
     }
 
-    .other-item .other-det-ctn .progress {
-        @apply w-[100%]
+    main .report, main .analytics, .action .action-detail {
+        @apply hidden
+    }
+
+    body main .small-device-analytics {
+        @apply flex flex-wrap w-[93%] h-fit ml-[3.5%] items-center justify-center gap-3 bg-white rounded-[10px] border border-lightBlack
+    }
+
+    .small-device-analytics .income {
+        @apply flex w-[47%] ml-0 mb-3
+    }
+
+    .small-device-analytics .sd-analytics {
+        @apply flex justify-between w-[95%] mb-3 mt-3
+    }
+
+    .sd-analytics .header {
+        @apply m-0
+    }
+
+    .sd-analytics .see-more {
+        @apply w-[90px] p-0 h-fit m-0
     }
 
     body main .history {
-        @apply items-start
+        @apply items-start mb-0
     }
 
     .history .table-ctn {
         @apply relative overflow-scroll
     }
 
+    main .history .history-nav {
+        @apply w-[95%]
+    }
+
     .history .history-nav, .history table {
         @apply ml-3
     }
-
 }
 
 @media screen and (max-width: 478px) {
-    main .account-details, main .report, main .quick-actions, main .report, main .analytics, body main .history, main .income {
+    main .account-details, main .quick-actions, body main .history, main .income {
         @apply w-[95%] ml-[2.5%] 
     }
 
@@ -266,28 +309,20 @@
         @apply text-[35px]
     }
 
-    .quick-actions .header, .quick-actions .action {
-        @apply w-[90%]
+    main .quick-actions {
+        @apply justify-center gap-2
     }
 
-    main .report {
-        @apply mt-[220px]
+    .quick-actions .action {
+        @apply  w-[18%]
     }
 
-    .report .report-nav {
-        @apply w-[90%] flex-col gap-3 items-start
+    body main .small-device-analytics {
+        @apply w-[95%] ml-[2.5%]
     }
 
-    main .redux {
-        @apply mt-[1175px] mr-[-4px]
-    }
-
-    .analytics .header {
-        @apply w-[90%]
-    }
-
-    .other-det-ctn .progress {
-        @apply w-[290px]
+    .small-device-analytics .income {
+        @apply flex w-[95%]
     }
 
     .history .history-nav {
@@ -300,23 +335,61 @@
 }
 
 @media screen and (max-width: 400px) {
-    main .redux {
-        @apply mr-[-6px]
-    }
-
     .other-det-ctn .progress {
         @apply w-[250px]
     }
+
+    .bottom-nav .active, .bottom-nav p {
+        @apply text-base
+    }
+
+    .bottom-nav .active img, .bottom-nav .btm-nav img {
+        @apply w-5 h-5
+    }
+
+    .small-device-analytics .sd-analytics .header {
+        @apply text-base
+    }
+
+    .small-device-analytics .sd-analytics .see-more {
+        @apply text-[14px]
+    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
     main .account-details, main .quick-actions, main .income, main .report, main .analytics, body main .history {
         @apply w-[95%] ml-2
     }
 
-    /*.main-nav .main-nav-right .nav-det-ctn {
-        @apply hidden
-    }*/
+    .main-nav .main-nav-right .menu-btn {
+        @apply flex ml-2
+    }
+
+    main .menu {
+        @apply w-[90%]
+    }
+
+    main .quick-actions {
+        @apply flex-col h-fit
+    }
+
+    .quick-actions .header {
+        @apply flex
+    }
+
+    .quick-actions .action {
+        @apply flex-row w-[99%]
+
+        last:mb-3
+    }
+
+    .action .action-det-ctn {
+        @apply items-start
+    }
+
+    .action-det-ctn .action-detail {
+        @apply flex
+    }
 
     .account-details .balance {
         @apply gap-1
@@ -330,12 +403,16 @@
         @apply relative overflow-auto
     }
 
-    main .redux {
-        @apply mr-[-10px]
-    }
-
     .other-det-ctn .progress {
         @apply w-[175px]
+    }
+
+    .history .history-nav {
+        @apply ml-2
+    }
+
+    .history .transact {
+        @apply items-center
     }
 
     .history .history-nav .det {
@@ -344,5 +421,13 @@
 
     .transact .amount {
         @apply text-xs
+    }
+
+    .transact-det .time {
+        @apply hidden
+    }
+
+    body main .bottom-nav {
+        @apply hidden
     }
 }
